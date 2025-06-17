@@ -5,14 +5,10 @@
     padding: 0px;
     font-family: 'Poppins', sans-serif;
 }
-/* Definindo a paleta de cores no :root para fácil acesso */
-
-
 
 :root {
   --primary-dark: #070f2b;
   --primary-accent: #9290c3;
-  --light-bg: #f8f9fa;
   --white: #ffffff;
   --star-color: #ffc107;
 }
@@ -22,12 +18,7 @@ body {
   color: var(--primary-dark);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3 {
   color: var(--primary-dark);
 }
 
@@ -50,18 +41,15 @@ h6 {
   padding: 80px 0;
   text-align: center;
 }
-.hero-section h1,
-.hero-section .lead {
+
+.hero-section h1, .hero-section .lead {
   color: var(--white);
 }
+
 .hero-section .lead {
   opacity: 0.9;
 }
-@media (min-width: 768px) {
-  .hero-section {
-    text-align: left;
-  }
-}
+
 .hero-section img {
   max-width: 100%;
   height: auto;
@@ -142,20 +130,20 @@ h6 {
   padding-top: 30px;
   border-top: 1px solid rgba(146, 144, 195, 0.2);
 }
-.rating-section h6 {
+.rating-section h3 {
   color: var(--primary-accent);
+  font-size:medium;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.stars-container i {
+.stars-container i{
   font-size: 1.8rem;
   color: #ccc;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
   padding: 0 5px;
 }
-.stars-container i.hover,
-.stars-container i.selected {
+.stars-container i.hover, .stars-container i.selected {
   color: var(--star-color);
 }
 #rating-feedback {

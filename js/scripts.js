@@ -82,18 +82,4 @@ document.addEventListener("DOMContentLoaded", function () {
       setStars(currentRating);
     });
   });
-
-  // --- 5. SCRIPT PARA VALIDAÇÃO DO FORMULÁRIO ---
-  const signupForm = document.getElementById("signupForm");
-  if (signupForm) {
-    signupForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Cadastro enviado com sucesso! (Simulação)");
-      const modalElement = document.getElementById("signupModal");
-      const modalInstance = bootstrap.Modal.getInstance(modalElement);
-      if (modalInstance) {
-        modalInstance.hide();
-      }
-    });
-  }
 });
