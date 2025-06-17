@@ -1,5 +1,5 @@
 ## Control Cash | Fintech Landing Page (Projeto Fiap)
-📄 Sobre o Projeto
+# 📄 Sobre o Projeto
 Control Cash é um projeto acadêmico para a FIAP que está em desenvolvimento, consistindo na criação de um site de uma fintech focada em controle e planejamento financeiro. A página apresenta a proposta de valor da startup, suas funcionalidades e informações de contato, com um design moderno e responsivo.
 O objetivo foi aplicar conceitos de desenvolvimento front-end utilizando tecnologias web modernas para criar uma experiência de usuário agradável e funcional.
 
