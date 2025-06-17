@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+/* Definindo a paleta de cores no :root para fácil acesso */
+
+
+
+:root {
+  --primary-dark: #070f2b;
+  --primary-accent: #9290c3;
+  --light-bg: #f8f9fa;
+  --white: #ffffff;
+  --star-color: #ffc107;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-dark);
+}
+
+/* --- Barra de Navegação Dinâmica --- */
+.navbar {
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+
+/* --- Seção Hero --- */
+.hero-section {
+  background-color: var(--primary-accent);
+  padding: 80px 0;
+  text-align: center;
+}
+.hero-section h1,
+.hero-section .lead {
+  color: var(--white);
+}
+.hero-section .lead {
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .hero-section {
+    text-align: left;
+  }
+}
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Botões --- */
+.btn-primary {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: var(--white);
+  font-weight: 500;
+  padding: 12px 24px;
+}
+.btn-primary:hover {
+  background-color: #1a2a61;
+  border-color: #1a2a61;
+}
+
+/* --- Seção de Funcionalidades e Animação --- */
+.features-section {
+  padding: 80px 0;
+  background-color: var(--white);
+}
+.features-section .card {
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Rodapé --- */
+.footer {
+  background-color: var(--primary-dark);
+  color: var(--primary-accent);
+  padding: 40px 0;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+/* --- Seção Acadêmica e Institucional no Rodapé --- */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px 30px;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  color: var(--primary-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+.footer-citation {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-top: 15px;
+}
+
+/* --- Seção de Avaliação no Rodapé --- */
+.rating-section {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(146, 144, 195, 0.2);
+}
+.rating-section h6 {
+  color: var(--primary-accent);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.stars-container i {
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  padding: 0 5px;
+}
+.stars-container i.hover,
+.stars-container i.selected {
+  color: var(--star-color);
+}
+#rating-feedback {
+  margin-top: 15px;
+  color: var(--white);
+  font-weight: 500;
+  display: none;
+}
