@@ -20,6 +20,7 @@ Links Sociais: Acesso rápido aos perfis profissionais do desenvolvedor no rodap
 
 💻 Como Visualizar o Projeto
 Acesso Online:
+
 O projeto está publicado e pode ser acessado através do GitHub Pages:
 
 ➡️ https://luizeduardotsdev.github.io/control-cash/
