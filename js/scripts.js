@@ -1,6 +1,4 @@
-// Espera todo o conteúdo da página carregar antes de executar o script
 document.addEventListener("DOMContentLoaded", function () {
-  // --- 1. SCRIPT DA NAVBAR DINÂMICA ---
   const navbar = document.getElementById("main-navbar");
   if (navbar) {
     window.addEventListener("scroll", function () {
@@ -12,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // --- 2. SCRIPT DO SCROLL SUAVE ---
   const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
   smoothScrollLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -30,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // --- 3. SCRIPT DE ANIMAÇÃO AO ROLAR ---
   const fadeInElements = document.querySelectorAll(".fade-in");
   const observerOptions = {
     root: null,
@@ -47,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }, observerOptions);
   fadeInElements.forEach((el) => observer.observe(el));
 
-  // --- 4. SCRIPT PARA AVALIAÇÃO DE ESTRELAS ---
   const stars = document.querySelectorAll(".stars-container .star");
   const feedbackMessage = document.getElementById("rating-feedback");
   let currentRating = 0;

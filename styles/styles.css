@@ -22,7 +22,6 @@ h1, h2, h3 {
   color: var(--primary-dark);
 }
 
-/* --- Barra de Navegação Dinâmica --- */
 .navbar {
   transition: padding 0.3s ease, box-shadow 0.3s ease;
 }
@@ -35,7 +34,6 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-/* --- Seção Hero --- */
 .hero-section {
   background-color: var(--primary-accent);
   padding: 80px 0;
@@ -55,7 +53,6 @@ h1, h2, h3 {
   height: auto;
 }
 
-/* --- Botões --- */
 .btn-primary {
   background-color: var(--primary-dark);
   border-color: var(--primary-dark);
@@ -68,7 +65,6 @@ h1, h2, h3 {
   border-color: #1a2a61;
 }
 
-/* --- Seção de Funcionalidades e Animação --- */
 .features-section {
   padding: 80px 0;
   background-color: var(--white);
@@ -87,7 +83,6 @@ h1, h2, h3 {
   transform: translateY(0);
 }
 
-/* --- Rodapé --- */
 .footer {
   background-color: var(--primary-dark);
   color: var(--primary-accent);
@@ -99,7 +94,6 @@ h1, h2, h3 {
   opacity: 0.8;
 }
 
-/* --- Seção Acadêmica e Institucional no Rodapé --- */
 .footer-links {
   list-style: none;
   padding: 0;
@@ -124,7 +118,6 @@ h1, h2, h3 {
   margin-top: 15px;
 }
 
-/* --- Seção de Avaliação no Rodapé --- */
 .rating-section {
   margin-top: 30px;
   padding-top: 30px;
